@@ -24,10 +24,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-              <FaCompass className="text-white text-xl" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              {/* <FaCompass className="text-white text-xl" /> */}
+              <img src="https://images.unsplash.com/vector-1762840398301-90e4aa10d49c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880" alt="TripNest Logo"/>
             </div>
-            <span className="text-2xl font-bold text-gray-800">TravelExplorer</span>
+            <span className="text-2xl font-bold text-gray-800">TripNest</span>
           </Link>
 
           {/* Desktop Navigation */}

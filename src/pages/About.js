@@ -14,7 +14,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">About TravelExplorer</h1>
+          <h1 className="text-5xl font-bold mb-4">About Trip Nest</h1>
           <p className="text-xl max-w-2xl mx-auto">
             Your trusted partner in discovering the world's most amazing destinations
           </p>
@@ -28,7 +28,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Our Story</h2>
             <div className="prose prose-lg text-gray-600 mx-auto">
               <p className="text-lg leading-relaxed mb-6">
-                Founded in 2020, TravelExplorer emerged from a simple idea: travel should be accessible, 
+                Founded in 2020, Trip Nest emerged from a simple idea: travel should be accessible, 
                 enjoyable, and memorable for everyone. Our team of travel enthusiasts and tech experts 
                 came together to create a platform that simplifies travel planning while providing 
                 authentic experiences.
@@ -79,7 +79,7 @@ const About = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Meet Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {TEAM_MEMBERS.map((member) => (
               <div key={member.id} className="text-center">
                 <img

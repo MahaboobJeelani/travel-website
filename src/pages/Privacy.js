@@ -83,7 +83,7 @@ const Privacy = () => {
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <p className="bg-gray-100 p-4 rounded-lg">
-                Email: privacy@travelexplorer.com<br />
+                Email: privacy@tripnest.com<br />
                 Address: 123 Travel Street, Adventure City, AC 12345
               </p>
             </section>

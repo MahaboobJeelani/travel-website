@@ -149,7 +149,7 @@ const generateMockBlogs = () => [
     excerpt: "Discover the most stunning and secluded beaches in Thailand that most tourists never find. From pristine white sands to crystal clear waters...",
     image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=400",
     date: "2024-01-15",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "5 min read"
   },
@@ -159,7 +159,7 @@ const generateMockBlogs = () => [
     excerpt: "From the snow-capped Alps to the magical Northern Lights, explore the best winter destinations in Europe for an unforgettable seasonal adventure...",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400",
     date: "2024-01-10",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "7 min read"
   },
@@ -167,9 +167,9 @@ const generateMockBlogs = () => [
     id: 3,
     title: "Budget Travel: How to Explore Japan for Under $50 a Day",
     excerpt: "Learn the secrets of affordable travel in Japan without compromising on experiences. Discover budget accommodations, cheap eats, and free attractions...",
-    image: "https://images.unsplash.com/photo-1540959733332-45e1b7732c5f?w=400",
+    image: "https://images.unsplash.com/photo-1762794996131-411a49b783a7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1331",
     date: "2024-01-05",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "6 min read"
   },
@@ -179,7 +179,7 @@ const generateMockBlogs = () => [
     excerpt: "Essential cultural tips and etiquette guidelines for travelers visiting Middle Eastern destinations. Learn about dress codes, greetings, and social norms...",
     image: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400",
     date: "2023-12-28",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "8 min read"
   },
@@ -189,7 +189,7 @@ const generateMockBlogs = () => [
     excerpt: "A comprehensive day-by-day guide to hiking one of the world's most famous trails. Everything you need to know about permits, preparation, and what to expect...",
     image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=400",
     date: "2023-12-20",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "10 min read"
   },
@@ -199,7 +199,7 @@ const generateMockBlogs = () => [
     excerpt: "Empowering guide for women traveling alone around the world. Safety tips, recommended destinations, and community resources for solo female travelers...",
     image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400",
     date: "2023-12-15",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "6 min read"
   },
@@ -207,9 +207,9 @@ const generateMockBlogs = () => [
     id: 7,
     title: "Culinary Journey: Best Food Cities in Southeast Asia",
     excerpt: "Explore the vibrant street food scenes and culinary delights across Southeast Asia. From Bangkok's street markets to Hanoi's food stalls...",
-    image: "https://images.unsplash.com/photo-1559314809-0f155186b3ac?w=400",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400",
     date: "2023-12-10",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "7 min read"
   },
@@ -219,7 +219,7 @@ const generateMockBlogs = () => [
     excerpt: "Learn how to minimize your environmental impact while exploring the world. Tips for eco-friendly accommodations, transportation, and activities...",
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400",
     date: "2023-12-05",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "5 min read"
   },
@@ -229,7 +229,7 @@ const generateMockBlogs = () => [
     excerpt: "Discover how to enjoy luxury travel experiences without breaking the bank. Tips for finding deals on premium accommodations and exclusive experiences...",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400",
     date: "2023-11-28",
-    author: "Travel Explorer",
+    author: "Trip Nest",
     url: "#",
     readTime: "6 min read"
   }
