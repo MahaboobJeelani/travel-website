@@ -41,7 +41,7 @@ export const TEAM_MEMBERS = [
   // },
   {
     id: 2,
-    name: "Sunitha Reddy",
+    name: "Aishwarya",
     position: "Head of Operations",
     bio: "Ensuring smooth operations and customer satisfaction across all our services. Dedicated to excellence in every detail.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300",
