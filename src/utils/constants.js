@@ -17,9 +17,9 @@ export const COUNTRIES = [
 ];
 
 export const COMPANY_INFO = {
-  name: "TripNest",
+  name: "Roamify",
   description: "Your gateway to unforgettable travel experiences around the world. We help you discover amazing destinations, find perfect accommodations, and create memories that last a lifetime.",
-  email: "info@tripnest.com",
+  email: "info@Roamify.com",
   phone: "+91 70132 70913",
   address: "HSR Layout, Bangalore, Karnataka, India"
 };
@@ -60,6 +60,6 @@ export const FAQS = [
   },
   {
     question: "How do I contact customer support?",
-    answer: "You can reach our customer support team via email at support@tripnest.com or call us at +1 (555) 123-4567. We're available 24/7 to assist you with any questions or concerns."
+    answer: "You can reach our customer support team via email at support@Roamify.com or call us at +1 (555) 123-4567. We're available 24/7 to assist you with any questions or concerns."
   }
 ];

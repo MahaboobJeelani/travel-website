@@ -154,7 +154,7 @@ const Privacy = () => {
                     </p>
                     <div className="bg-[#D8CFC4]/30 p-6 rounded-xl border border-[#C8A24A]/10">
                       <p className="text-[#3A3A3A] font-light">
-                        Email: privacy@tripnest.com<br />
+                        Email: privacy@Roamify.com<br />
                         Address: 123 Travel Street, Adventure City, AC 12345
                       </p>
                     </div>

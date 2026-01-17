@@ -31,12 +31,12 @@ const Header = () => {
             <div className="w-12 h-12 flex items-center justify-center overflow-hidden rounded-lg border border-[#3A3A3A]/10 bg-white shadow-sm transition-all duration-300 group-hover:shadow-md">
               <img 
                 src="https://images.unsplash.com/vector-1762840398301-90e4aa10d49c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880" 
-                alt="TripNest Logo"
+                alt="Roamify Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <span className="text-2xl font-serif font-bold text-[#3A3A3A] tracking-tight">
-              TripNest
+              Roamify
             </span>
           </Link>
 

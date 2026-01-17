@@ -113,7 +113,7 @@ const Home = () => {
               <div className="h-0.5 w-16 bg-[#C8A24A] mx-auto mt-2"></div>
             </div>
             <h2 className="text-5xl font-serif font-bold text-[#3A3A3A] mb-6 leading-tight">
-              Why Choose Trip Nest?
+              Why Choose Roamify?
             </h2>
             <p className="text-xl text-[#3A3A3A]/80 max-w-3xl mx-auto leading-relaxed font-light">
               We make travel planning easy and enjoyable

@@ -35,7 +35,7 @@ const About = () => {
             <div className="h-0.5 w-16 bg-[#C8A24A] mx-auto mt-2"></div>
           </div>
           <h1 className="text-6xl font-serif font-bold mb-8 leading-tight">
-            About Trip Nest
+            About Roamify
           </h1>
           <p className="text-2xl max-w-3xl mx-auto leading-relaxed font-light text-white/90">
             Your trusted partner in discovering the world's most amazing destinations
@@ -89,7 +89,7 @@ const About = () => {
                 </div>
                 <h2 className="text-5xl font-serif font-bold text-[#3A3A3A] mb-10 leading-tight">
                   The Story Behind <br />
-                  <span className="text-[#C8A24A]">Trip Nest</span>
+                  <span className="text-[#C8A24A]">Roamify</span>
                 </h2>
               </div>
 
@@ -99,7 +99,7 @@ const About = () => {
                     <div className="w-2 h-2 rounded-full bg-[#C8A24A] group-hover:scale-125 transition-transform duration-300"></div>
                   </div>
                   <p className="text-xl text-[#3A3A3A]/80 leading-relaxed font-light pl-4 border-l border-[#C8A24A]/20">
-                    Founded in 2020, Trip Nest emerged from a simple idea: travel should be accessible,
+                    Founded in 2020, Roamify emerged from a simple idea: travel should be accessible,
                     enjoyable, and memorable for everyone. Our team of travel enthusiasts and tech experts
                     came together to create a platform that simplifies travel planning while providing
                     authentic experiences.
@@ -199,7 +199,7 @@ const About = () => {
               Our Leadership Team
             </h2>
             <p className="text-xl text-[#3A3A3A]/70 max-w-3xl mx-auto font-light leading-relaxed">
-              Meet the passionate individuals who drive innovation and excellence at Trip Nest
+              Meet the passionate individuals who drive innovation and excellence at Roamify
             </p>
           </div>
 

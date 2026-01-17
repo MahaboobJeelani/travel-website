@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1">
             <div className="mb-6">
-              <h3 className="text-3xl font-serif font-bold text-white mb-2">TripNest</h3>
+              <h3 className="text-3xl font-serif font-bold text-white mb-2">Roamify</h3>
               <div className="h-1 w-16 bg-[#C8A24A]"></div>
             </div>
             <p className="text-[#D8CFC4]/80 mb-8 leading-relaxed font-light">
@@ -184,7 +184,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-[#D8CFC4]/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-[#D8CFC4]/70 text-sm flex items-center font-light">
-            © {new Date().getFullYear()} TripNest. Made with <FaHeart className="text-[#C8A24A] mx-1.5" /> for travelers.
+            © {new Date().getFullYear()} Roamify. Made with <FaHeart className="text-[#C8A24A] mx-1.5" /> for travelers.
           </p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <Link
