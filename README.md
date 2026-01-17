@@ -66,10 +66,10 @@ cd Roamify
 
 ### 2. Install dependencies
 npm install
-# or
+ or
 yarn install
 
 ### 3. Start development server
 npm start
-# or
+ or
 yarn start
