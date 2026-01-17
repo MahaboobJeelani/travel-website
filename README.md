@@ -61,15 +61,15 @@
 ## Installation Process
 
 ### 1. Clone the repository
-git clone https://github.com/MahaboobJeelani/travel-website.git
-cd Roamify
+- git clone https://github.com/MahaboobJeelani/travel-website.git
+- cd Roamify
 
 ### 2. Install dependencies
-npm install
- or
-yarn install
+- npm install
+  - or
+- yarn install
 
 ### 3. Start development server
-npm start
- or
-yarn start
+- npm start
+ - or
+- yarn start
