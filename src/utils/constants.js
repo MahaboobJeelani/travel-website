@@ -27,24 +27,17 @@ export const COMPANY_INFO = {
 export const TEAM_MEMBERS = [
   {
     id: 1,
-    name: "Mahaboob Jeelani Basha",
+    name: "Mahaboob Jeelani",
     position: "CEO & Founder",
     bio: "Travel enthusiast with 10+ years in the tourism industry. Passionate about creating unforgettable travel experiences for our customers.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300",
+    image: "https://images.unsplash.com/photo-1589386417686-0d34b5903d23?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  // {
-  //   id: 2,
-  //   name: "Mike Chen",
-  //   position: "CTO",
-  //   bio: "Tech expert passionate about building seamless travel experiences. Loves solving complex problems with elegant solutions.",
-  //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300",
-  // },
   {
     id: 2,
-    name: "Aishwarya",
+    name: "Kumari",
     position: "Head of Operations",
     bio: "Ensuring smooth operations and customer satisfaction across all our services. Dedicated to excellence in every detail.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300",
+    image: "https://images.unsplash.com/photo-1648412868424-9bee5023a257?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   }
 ];
 

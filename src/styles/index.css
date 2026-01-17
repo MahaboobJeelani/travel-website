@@ -63,7 +63,6 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -81,7 +80,6 @@
   background: #a8a8a8;
 }
 
-/* Loading animation */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;

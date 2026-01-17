@@ -4,6 +4,7 @@ import CountryDropdown from '../components/hotels/CountryDropdown';
 import HotelList from '../components/hotels/HotelList';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import { fetchHotels } from '../redux/actions/hotelActions';
+import { FaHotel, FaSearch } from "react-icons/fa";
 
 const Hotels = () => {
   const dispatch = useDispatch();
@@ -47,10 +48,10 @@ const Hotels = () => {
         <button
           key={i}
           onClick={() => handlePageChange(i)}
-          className={`px-4 py-2 rounded-lg transition duration-300 ${
+          className={`px-4 py-2.5 rounded-lg transition-all duration-300 ${
             currentPage === i
-              ? 'bg-blue-600 text-white'
-              : 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+              ? 'bg-[#C8A24A] text-[#3A3A3A] font-medium shadow-sm'
+              : 'bg-[#D8CFC4]/50 text-[#3A3A3A]/70 hover:bg-[#D8CFC4]/70 hover:text-[#3A3A3A]'
           }`}
         >
           {i}
@@ -59,21 +60,23 @@ const Hotels = () => {
     }
 
     return (
-      <div className="flex justify-center items-center space-x-2 mt-8">
+      <div className="flex justify-center items-center space-x-3 mt-10">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-gray-200 rounded-lg disabled:opacity-50 hover:bg-gray-300 transition duration-300"
+          className="px-5 py-2.5 bg-[#D8CFC4]/50 rounded-lg disabled:opacity-40 hover:bg-[#D8CFC4]/70 transition-all duration-300 text-[#3A3A3A]/70 hover:text-[#3A3A3A] disabled:hover:bg-[#D8CFC4]/50"
         >
           Previous
         </button>
         
-        {pages}
+        <div className="flex items-center space-x-2">
+          {pages}
+        </div>
         
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-gray-200 rounded-lg disabled:opacity-50 hover:bg-gray-300 transition duration-300"
+          className="px-5 py-2.5 bg-[#D8CFC4]/50 rounded-lg disabled:opacity-40 hover:bg-[#D8CFC4]/70 transition-all duration-300 text-[#3A3A3A]/70 hover:text-[#3A3A3A] disabled:hover:bg-[#D8CFC4]/50"
         >
           Next
         </button>
@@ -82,80 +85,107 @@ const Hotels = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+    <div className="min-h-screen bg-[#F5F2EE] py-12">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <div className="inline-block mb-6">
+            <span className="text-[#C8A24A] font-serif text-sm font-medium tracking-widest uppercase">
+              Hotel Directory
+            </span>
+            <div className="h-0.5 w-16 bg-[#C8A24A] mx-auto mt-2"></div>
+          </div>
+          <h1 className="text-5xl font-serif font-bold text-[#3A3A3A] mb-6 leading-tight">
             Find Your Perfect Stay
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-[#3A3A3A]/70 max-w-2xl mx-auto leading-relaxed">
             Discover amazing hotels around the world
           </p>
         </div>
 
         {/* Country Selection */}
-        <CountryDropdown
-          selectedCountry={selectedCountry}
-          onCountryChange={setSelectedCountry}
-        />
+        <div className="max-w-2xl mx-auto mb-12">
+          <CountryDropdown
+            selectedCountry={selectedCountry}
+            onCountryChange={setSelectedCountry}
+          />
+        </div>
 
         {/* Loading State */}
         {loading && <LoadingSpinner text="Loading hotels..." />}
 
         {/* Error State */}
         {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center max-w-md mx-auto">
-            {error}
+          <div className="max-w-2xl mx-auto bg-[#D8CFC4]/30 border border-[#3A3A3A]/20 px-6 py-5 rounded-xl mb-8 text-center">
+            <p className="text-[#3A3A3A] font-medium">{error}</p>
           </div>
         )}
 
         {/* Results Info */}
         {selectedCountry && !loading && hotels.length > 0 && (
-          <div className="text-center mb-6">
-            <p className="text-gray-600">
-              Found <span className="font-semibold">{hotels.length}</span> hotels in {selectedCountry}
-              {currentHotels.length < hotels.length && ` • Showing ${currentHotels.length} of ${hotels.length}`}
-            </p>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-3 bg-white/50 backdrop-blur-sm px-6 py-3.5 rounded-full border border-[#3A3A3A]/10">
+              <p className="text-[#3A3A3A] font-light">
+                Found <span className="font-medium text-[#C8A24A]">{hotels.length}</span> hotels in <span className="font-medium">{selectedCountry}</span>
+                {currentHotels.length < hotels.length && (
+                  <span className="text-[#3A3A3A]/60"> • Showing {currentHotels.length} of {hotels.length}</span>
+                )}
+              </p>
+            </div>
           </div>
         )}
 
         {/* Hotels List */}
         {selectedCountry && !loading && (
           <>
-            <HotelList hotels={currentHotels} />
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl border border-[#3A3A3A]/10 p-8 mb-10">
+              <HotelList hotels={currentHotels} />
+            </div>
             {renderPagination()}
           </>
         )}
 
         {/* Empty State */}
         {!selectedCountry && !loading && (
-          <div className="text-center py-12">
-            <div className="text-gray-400 text-6xl mb-4">🏨</div>
-            <h3 className="text-2xl font-semibold text-gray-600 mb-2">
-              Select a Country
-            </h3>
-            <p className="text-gray-500 max-w-md mx-auto">
-              Choose a country from the dropdown above to discover available hotels and start planning your next adventure.
-            </p>
+          <div className="max-w-3xl mx-auto text-center py-16">
+            <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-[#D8CFC4]/50 mb-8">
+              <span className="text-5xl text-[#3A3A3A]/40"><FaHotel/></span>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-2xl font-serif font-semibold text-[#3A3A3A] mb-4">
+                Select a Country
+              </h3>
+              <div className="h-px w-24 bg-[#C8A24A] mx-auto mb-6"></div>
+              <p className="text-[#3A3A3A]/70 max-w-md mx-auto leading-relaxed font-light">
+                Choose a country from the dropdown above to discover available hotels and start planning your next adventure.
+              </p>
+            </div>
           </div>
         )}
 
         {/* No Results State */}
         {selectedCountry && !loading && hotels.length === 0 && !error && (
-          <div className="text-center py-12">
-            <div className="text-gray-400 text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-semibold text-gray-600 mb-2">
-              No Hotels Found
-            </h3>
-            <p className="text-gray-500 max-w-md mx-auto">
-              We couldn't find any hotels for {selectedCountry}. Try selecting a different country or check back later for new listings.
-            </p>
-            <button
-              onClick={() => setSelectedCountry('')}
-              className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300"
-            >
-              Choose Another Country
-            </button>
+          <div className="max-w-3xl mx-auto text-center py-16">
+            <div className="inline-flex items-center justify-center w-32 h-32 rounded-full bg-[#D8CFC4]/50 mb-8">
+              <span className="text-5xl text-[#3A3A3A]/40"><FaSearch /></span>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-2xl font-serif font-semibold text-[#3A3A3A] mb-4">
+                No Hotels Found
+              </h3>
+              <div className="h-px w-24 bg-[#C8A24A] mx-auto mb-6"></div>
+              <p className="text-[#3A3A3A]/70 max-w-md mx-auto leading-relaxed font-light mb-8">
+                We couldn't find any hotels for {selectedCountry}. Try selecting a different country or check back later for new listings.
+              </p>
+              <button
+                onClick={() => setSelectedCountry('')}
+                className="inline-flex items-center gap-2 bg-[#C8A24A] text-[#3A3A3A] font-medium py-3.5 px-8 rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                Choose Another Country
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </div>
           </div>
         )}
       </div>
